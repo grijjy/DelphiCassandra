@@ -1,13 +1,15 @@
 # Working with big data databases in Delphi – Cassandra, Couchbase and MongoDB (Part 1 of 3)
  
-This is the first part of a three-part series on working with some of the leading big data databases directly from Delphi.  The first part focuses on a basic class framework for working with Cassandra along with an example application.![](http://i.imgur.com/ytHE0My.png)
+This is the first part of a three-part series on working with big data databases directly from Delphi. In the first part we focus on a basic class framework for working with Cassandra along with an example application.![](http://i.imgur.com/ytHE0My.png)  
+
+[Part 1](https://github.com/grijjy/DelphiCassandra) focuses on Cassandra, Part 2 focused on Couchbase and Part 3 focuses on MongoDB.
 
 For more information about us, our support and services visit the [Grijjy homepage](http://www.grijjy.com) or the [Grijjy developers blog](http://blog.grijjy.com).
 
 ## Introduction to Cassandra
 [Apache Cassandra](http://cassandra.apache.org/) is an open-source database system that was designed to easily scale outwards in a distributed model which is common in cloud computing environments today.  Originally developed by Facebook to solve traditional performance issues related to relational databases, Cassandra uses a NoSQL approach and flexible model focused on delivering performance to reads, writes and queries.
 
-Today Cassandra is widely used in many Internet enabled services and private organizations where scale, performance and ease of administration are critical.  Cassandra is able to store a dynamic number of not just rows, but columns and tables which are indexed by keys which makes it highly regarded in solving problems that relate to dynamic and unknown content.
+Today Cassandra is widely used in many Internet enabled services and private organizations where scale, performance and ease of administration which is critical.  Cassandra is able to store a dynamic number of not just rows, but columns and tables which are indexed by keys which makes it highly regarded in solving problems that relate to dynamic and content without a fixed schema.
 
 This is by no means an exhaustive look at the benefits of Cassandra.  If you are truly interested there are wealth of resources online on the how to use Cassandra and to what purpose it suits best.
 
@@ -124,6 +126,7 @@ begin
   finally
     Statement.Free;
   end;
+end;
 ```
 
 #### Cassandra Uuids
@@ -157,6 +160,7 @@ begin
   finally
     Statement.Free;
   end;
+end;
 ```
 
 #### Query a single row
