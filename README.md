@@ -6,6 +6,8 @@ This is the first part of a three-part series on working with big data databases
 
 For more information about us, our support and services visit the [Grijjy homepage](http://www.grijjy.com) or the [Grijjy developers blog](http://blog.grijjy.com).
 
+The source code and related example repository is hosted on GitHub at [https://github.com/grijjy/DelphiCassandra](https://github.com/grijjy/DelphiCassandra). 
+
 ## Introduction to Cassandra
 [Apache Cassandra](http://cassandra.apache.org/) is an open-source database system that was designed to easily scale outwards in a distributed model which is common in cloud computing environments today.  Originally developed by Facebook to solve traditional performance issues related to relational databases, Cassandra uses a NoSQL approach and flexible model focused on delivering performance to reads, writes and queries.
 
@@ -26,10 +28,11 @@ This framework relies on the [DataStax C/C++ Driver](https://github.com/datastax
 
 ## Installing Cassandra Server
 
-The official Cassandra installation instructions focus on Debian, but since we prefer Ubuntu we are only going to discuss those steps here.  Installing Cassandra involves 3 main steps,
+The official Cassandra installation instructions focus on Debian, but since we prefer Ubuntu we are only going to discuss those steps here.  Installing Cassandra involves 3 main steps:
+
 1. Install [Ubuntu 16.04 LTS](https://www.ubuntu.com/download).
-1. Install Java 8
-1. Install Cassandra
+2. Install Java 8
+3. Install Cassandra
 
 ### To install Java 8:
 ```shell
