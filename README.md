@@ -2,7 +2,7 @@
  
 This is the first part of a three-part series on working with big data databases directly from Delphi. In the first part we focus on a basic class framework for working with Cassandra along with an example application.![](http://i.imgur.com/ytHE0My.png)  
 
-[Part 1](https://github.com/grijjy/DelphiCassandra) focuses on Cassandra, Part 2 focused on Couchbase and Part 3 focuses on MongoDB.
+[Part 1](https://github.com/grijjy/DelphiCassandra) focuses on Cassandra, [Part 2](https://github.com/grijjy/DelphiCouchbase) focuses on Couchbase and Part 3 focuses on MongoDB.
 
 For more information about us, our support and services visit the [Grijjy homepage](http://www.grijjy.com) or the [Grijjy developers blog](http://blog.grijjy.com).
 
