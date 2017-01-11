@@ -107,33 +107,11 @@ type
     property LastErrorDesc: String read FLastErrorDesc;
   end;
 
-{ Helpers }
-
-function gODateTimeToMillisecondsSinceEpoch(const AValue: TDateTime;
-  const AInputIsUTC: Boolean): Int64;
-
 implementation
 
 uses
   System.SysUtils,
   System.DateUtils;
-
-{ Helpers }
-
-function gODateTimeToMillisecondsSinceEpoch(const AValue: TDateTime;
-  const AInputIsUTC: Boolean): Int64;
-var
-  Date: TDateTime;
-begin
-  if AInputIsUTC then
-    Date := AValue
-  else
-    Date := TTimeZone.Local.ToUniversalTime(AValue);
-
-  Result := MilliSecondsBetween(UnixDateDelta, Date);
-  if (Date < UnixDateDelta) then
-     Result := -Result;
-end;
 
 { TgoCassUuidGen }
 

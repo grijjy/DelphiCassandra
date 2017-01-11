@@ -13,6 +13,7 @@ uses
   Vcl.Forms,
   Vcl.Dialogs,
   Vcl.StdCtrls,
+  Grijjy.DateUtils,
   Grijjy.Cassandra;
 
 type
@@ -125,7 +126,7 @@ begin
   try
     Statement.Bind(0, FCassUuidGen.New);
     Statement.Bind(1, 'user4');
-    Statement.Bind(2, gODateTimeToMillisecondsSinceEpoch(TTimeZone.Local.ToUniversalTime(Now), True));
+    Statement.Bind(2, goDateTimeToMillisecondsSinceEpoch(TTimeZone.Local.ToUniversalTime(Now), True));
     if FCassandra.Execute(Statement) then
     begin
       MemoLog.Lines.Add('Insert Success!');
